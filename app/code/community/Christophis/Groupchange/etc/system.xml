@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <christophis translate="label" module="groupchange">
+            <label>Christophis Extensions</label>
+            <sort_order>100</sort_order>
+        </christophis>
+    </tabs>
+    <sections>
+        <christophis translate="label" module="groupchange">
+            <label>Change Customer Group on Purchase</label>
+            <tab>christophis</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <christophis_group translate="label" module="groupchange">
+                    <label>Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+
+                    <fields>
+                        <sku translate="label">
+                            <label>SKU: </label>
+                            <comment>Enter the SKU of the product that will change the customer group when purchased</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </sku>
+                        <cgroup translate="label">
+                            <label>Customer Group ID: </label>
+                            <comment>Enter the Customer Group ID which you would like customers to be changed to when they purchase the SKU above</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>90</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </cgroup>
+                    </fields>
+                </christophis_group>
+            </groups>
+        </christophis>
+    </sections>
+</config>

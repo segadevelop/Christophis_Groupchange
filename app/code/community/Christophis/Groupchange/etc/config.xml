@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Christophis_Groupchange>
+            <version>0.1.0</version>
+        </Christophis_Groupchange>
+    </modules>
+    <global>
+        <models>
+            <groupchange>
+                <class>Christophis_Groupchange_Model</class>
+                <resourceModel>groupchange_mysql4</resourceModel>
+            </groupchange>
+        </models>
+        </helpers>
+          <groupchange>
+            <class>Christophis_Groupchange_Helper</class>
+          </groupchange>
+        </helpers>
+        <events>
+            <sales_order_place_after>
+                <observers>
+                    <groupchange_sales_place_order_after>
+                        <class>modulename/observer</class>
+                        <method>changeGroup</method>
+                    </groupchange_scratch_sales_place_order_after>
+                </observers>
+            </sales_order_place_after>
+        </events>
+    </global>
+</config>

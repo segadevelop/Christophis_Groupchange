@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <Christophis_Groupchange>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>0.1.0</version>
+    </Christophis_Groupchange>
+  </modules>
+</config>
